@@ -7,6 +7,9 @@ public class Person {
     private String surname;
     private int age;
 
+    public Person() {
+    }
+
     public int getId() {
         return id;
     }
