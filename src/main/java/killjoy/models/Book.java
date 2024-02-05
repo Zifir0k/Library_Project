@@ -1,6 +1,10 @@
 package killjoy.models;
 
 public class Book {
+
+    public Book() {
+    }
+
     private int id;
     private int personId;
     private String name;
