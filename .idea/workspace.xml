@@ -9,11 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa049bc-1221-4206-b456-4bba72cbf666" name="Changes" comment="Second step">
+    <list default="true" id="4aa049bc-1221-4206-b456-4bba72cbf666" name="Changes" comment="three step">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/new.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/killjoy/config/MySpringMvcDispatcherServletInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/killjoy/config/MySpringMvcDispatcherServletInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/killjoy/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/killjoy/config/SpringConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/killjoy/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/killjoy/models/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/killjoy/controllers/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/killjoy/controllers/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/killjoy/controllers/PersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/killjoy/controllers/PeopleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/killjoy/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/killjoy/dao/PersonDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/killjoy/dao/PersonMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +79,11 @@
     ]
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="killjoy.config" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Tomcat 10.1.15" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.15" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -83,6 +96,7 @@
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="8493348d-f108-4f44-984e-4b0817d3b4cf" />
+        <option name="HTTP_PORT" value="8070" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -175,7 +189,10 @@
       <workItem from="1706831405861" duration="1855000" />
       <workItem from="1706838343841" duration="824000" />
       <workItem from="1706852260208" duration="10452000" />
-      <workItem from="1706867972310" duration="169000" />
+      <workItem from="1706867972310" duration="262000" />
+      <workItem from="1706868259256" duration="2232000" />
+      <workItem from="1707062723670" duration="9025000" />
+      <workItem from="1707110492967" duration="297000" />
     </task>
     <task id="LOCAL-00001" summary="First step">
       <created>1706831305996</created>
@@ -191,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1706853711238</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="three step">
+      <created>1706868200767</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706868200767</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +235,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First step" />
     <MESSAGE value="Second step" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second step" />
+    <MESSAGE value="three step" />
+    <option name="LAST_COMMIT_MESSAGE" value="three step" />
   </component>
 </project>
