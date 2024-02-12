@@ -50,7 +50,10 @@ public class BookController {
         return "redirect:/books";
     }
 
-    //нельзя удалить
+    /*TODO:1.Сделать так чтоб книги можно было удалить
+    *      2.Сделать так чтоб после удаления возращалась страница со всеми книгами
+    *      3.Добавить отображение всех книг пользователя на странице people/show в виде списка
+    */
     @DeleteMapping("/{id}")
     public String delete(@PathVariable("id")int id){
         bookDAO.delete(id);

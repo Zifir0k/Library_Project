@@ -5,8 +5,21 @@
     <title>Редактировать книгу</title>
 </head>
 <body>
-<form th:method="PATCH" th:action="@{books/{id}(id=${book.getId()})}" th:object="${book}">
-  <input type="submit" value="Щбновить">
+<form th:method="PATCH" th:action="@{book/{id}(id=${book.getId()})}" th:object="${book}">
+
+    <label for="name">Введите название книги</label>
+    <input type="text" th:field="*{name}" id="name"/>
+    <br>
+    <label for="secondName">Введите автора</label>
+    <input type="text" th:field="*{author}" id="secondName">
+    <br>
+    <label for="age">Введите год книги</label>
+    <input type="text" th:field="*{ear}" id="age">
+    <br>
+    <label for="personId">Введите пользователя книги</label>
+    <input type="text" th:field="*{personId}" id="personId">
+    <br>
+    <input type="submit" value="Обновить">
 </form>
 </body>
 </html>

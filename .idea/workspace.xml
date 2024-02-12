@@ -9,15 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa049bc-1221-4206-b456-4bba72cbf666" name="Changes" comment="person the finish">
-      <change afterPath="$PROJECT_DIR$/src/main/java/killjoy/dao/BookDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/new.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/show.html" afterDir="false" />
+    <list default="true" id="4aa049bc-1221-4206-b456-4bba72cbf666" name="Changes" comment="book the finish">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/killjoy/controllers/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/killjoy/controllers/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/killjoy/dao/BookDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/killjoy/dao/BookDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/killjoy/models/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/killjoy/models/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/new.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +190,16 @@
       <workItem from="1707062723670" duration="9025000" />
       <workItem from="1707110492967" duration="537000" />
       <workItem from="1707111059569" duration="946000" />
-      <workItem from="1707112249967" duration="5360000" />
+      <workItem from="1707112249967" duration="6150000" />
+      <workItem from="1707330957583" duration="91000" />
+      <workItem from="1707395366996" duration="707000" />
+      <workItem from="1707559615274" duration="2101000" />
+      <workItem from="1707577304257" duration="225000" />
+      <workItem from="1707577572496" duration="662000" />
+      <workItem from="1707635643031" duration="861000" />
+      <workItem from="1707663916538" duration="639000" />
+      <workItem from="1707671745034" duration="2692000" />
+      <workItem from="1707716017925" duration="1562000" />
     </task>
     <task id="LOCAL-00001" summary="First step">
       <created>1706831305996</created>
@@ -235,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707112530610</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="book the finish">
+      <created>1707118588909</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1707118588909</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,6 +272,7 @@
     <MESSAGE value="Second step" />
     <MESSAGE value="three step" />
     <MESSAGE value="person the finish" />
-    <option name="LAST_COMMIT_MESSAGE" value="person the finish" />
+    <MESSAGE value="book the finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="book the finish" />
   </component>
 </project>
