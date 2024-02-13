@@ -1,5 +1,6 @@
 package killjoy.controllers;
 
+import killjoy.dao.BookDAO;
 import killjoy.dao.PersonDAO;
 import killjoy.models.Person;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,10 +13,12 @@ import org.springframework.web.bind.annotation.*;
 public class PeopleController {
 
     private final PersonDAO personDAO;
+    private final BookDAO bookDAO;
 
     @Autowired
-    public PeopleController(PersonDAO personDAO) {
+    public PeopleController(PersonDAO personDAO, BookDAO bookDAO) {
         this.personDAO = personDAO;
+        this.bookDAO = bookDAO;
     }
 
     @GetMapping()
@@ -27,6 +30,7 @@ public class PeopleController {
     @GetMapping("/{id}")
     public String show(@PathVariable("id") int id, Model model){
         model.addAttribute("person", personDAO.show(id));
+        model.addAttribute("book",personDAO.getBook(id));
         return "people/show";
     }
 

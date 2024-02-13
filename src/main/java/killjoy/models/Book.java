@@ -1,5 +1,9 @@
 package killjoy.models;
 
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotEmpty;
+
 public class Book {
 
     public Book() {
@@ -7,8 +11,15 @@ public class Book {
 
     private int id;
     private int personId;
+    @NotEmpty
+    @Max(value = 100)
     private String name;
+    @NotEmpty
+    @Max(value = 100)
     private String author;
+    @NotEmpty
+    @Min(value = 0,message = "Число слишком маленькое")
+    @Max(value = 2014,message = "Число слишком большое")
     private int ear;
 
     public int getPersonId() {

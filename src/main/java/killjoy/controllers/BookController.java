@@ -1,19 +1,28 @@
 package killjoy.controllers;
 
 import killjoy.dao.BookDAO;
+import killjoy.dao.PersonDAO;
 import killjoy.models.Book;
 import killjoy.models.Person;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Optional;
 
 @Controller
 @RequestMapping("/books")
 public class BookController {
 
     private final BookDAO bookDAO;
+    private final PersonDAO personDAO;
 
-    public BookController(BookDAO bookDAO) {this.bookDAO = bookDAO;}
+    @Autowired
+    public BookController(BookDAO bookDAO, PersonDAO personDAO) {
+        this.bookDAO = bookDAO;
+        this.personDAO = personDAO;
+    }
 
     @GetMapping()
     public String Books(Model model){
@@ -24,6 +33,13 @@ public class BookController {
     @GetMapping("/{id}")
     public String show(@PathVariable("id") int id, Model model){
         model.addAttribute("book", bookDAO.show(id));
+
+        Optional<Person> owner = bookDAO.getOwner(id);
+
+        if (owner.isPresent())
+            model.addAttribute("owner",owner.get());
+        else
+            model.addAttribute("person",personDAO.index());
         return "books/show";
     }
 
@@ -49,14 +65,19 @@ public class BookController {
         bookDAO.update(id, book);
         return "redirect:/books";
     }
-
-    /*TODO:3.Добавить отображение всех книг пользователя на странице people/show в виде списка
-           4.Добавить на страницу пользователя информацию по той книге которая есть у него
-           5.Добавить на страницу пользователя возможность удалить книгу у него
-    */
     @DeleteMapping("/{id}")
     public String delete(@PathVariable("id")int id){
         bookDAO.delete(id);
         return "redirect:/books";
+    }
+
+    public String release(@PathVariable("id")int id){
+        bookDAO.release(id);
+        return "redirect:/books/" + id;
+    }
+
+    public String assing(@PathVariable("id")int id,@ModelAttribute("person")Person selectPerson){
+        bookDAO.assing(id,selectPerson);
+        return "redirect:/books/" + id;
     }
 }

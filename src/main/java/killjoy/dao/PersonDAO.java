@@ -1,5 +1,6 @@
 package killjoy.dao;
 
+import killjoy.models.Book;
 import killjoy.models.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
@@ -51,5 +52,9 @@ public class PersonDAO {
 
     public void delete(int id){
         jdbcTemplate.update("DELETE FROM person WHERE id=?", id);
+    }
+
+    public List<Book> getBook(int id){
+        return jdbcTemplate.query("SELECT * FROM book WHERE personid = ?", new Object[]{id}, new BeanPropertyRowMapper<>(Book.class));
     }
 }

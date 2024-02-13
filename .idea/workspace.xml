@@ -9,8 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4aa049bc-1221-4206-b456-4bba72cbf666" name="Changes" comment="Fixed errors related to the&#10;implementation of the book.&#10;added TODO">
+    <list default="true" id="4aa049bc-1221-4206-b456-4bba72cbf666" name="Changes" comment="Completely released the book.&#10;updated TODO">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/killjoy/controllers/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/killjoy/controllers/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/killjoy/controllers/PeopleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/killjoy/controllers/PeopleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/killjoy/dao/BookDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/killjoy/dao/BookDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/killjoy/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/killjoy/dao/PersonDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/killjoy/models/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/killjoy/models/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/killjoy/models/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/killjoy/models/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/books/show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/people/show.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,7 +204,11 @@
       <workItem from="1707635643031" duration="861000" />
       <workItem from="1707663916538" duration="639000" />
       <workItem from="1707671745034" duration="2692000" />
-      <workItem from="1707716017925" duration="2412000" />
+      <workItem from="1707716017925" duration="4515000" />
+      <workItem from="1707735094871" duration="3336000" />
+      <workItem from="1707757584493" duration="447000" />
+      <workItem from="1707803453576" duration="3115000" />
+      <workItem from="1707814340033" duration="3084000" />
     </task>
     <task id="LOCAL-00001" summary="First step">
       <created>1706831305996</created>
@@ -254,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1707717676328</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Completely released the book.&#10;updated TODO">
+      <created>1707719835416</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1707719835416</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,6 +297,7 @@
     <MESSAGE value="person the finish" />
     <MESSAGE value="book the finish" />
     <MESSAGE value="Fixed errors related to the&#10;implementation of the book.&#10;added TODO" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed errors related to the&#10;implementation of the book.&#10;added TODO" />
+    <MESSAGE value="Completely released the book.&#10;updated TODO" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completely released the book.&#10;updated TODO" />
   </component>
 </project>
