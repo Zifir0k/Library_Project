@@ -1,24 +1,34 @@
 package killjoy.models;
 
+import jakarta.persistence.*;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
 
+@Entity
+@Table(name = "person")
 public class Person {
+    @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @NotEmpty
     @Size(min = 2,max = 100,message = "Имя не может быть пустым")
+    @Column(name = "name")
     private String name;
     @NotEmpty
     @Size(min = 2,max = 100,message = "Фамилия не может быть пустой")
+    @Column(name = "secondname")
     private String secondName;
     @NotEmpty
     @Size(min = 2,max = 100,message = "Отчество не может быть пустым")
+    @Column(name = "surname")
     private String surname;
     @NotEmpty
     @Min(value = 14,message = "Клиент должен быть платеспособным")
     @Max(value = 120,message = "Люди столько не живут АЛЛО!")
+    @Column(name = "age")
     private int age;
 
     public Person() {
@@ -65,7 +75,6 @@ public class Person {
     }
 
     public Person(int id, String name, String secondName, String surname, int age) {
-        this.id = id;
         this.name = name;
         this.secondName = secondName;
         this.surname = surname;

@@ -1,25 +1,35 @@
 package killjoy.models;
 
+import jakarta.persistence.*;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotEmpty;
 
+@Entity
+@Table(name = "book")
 public class Book {
 
     public Book() {
     }
 
+    @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    @Column(name = "personid")
     private int personId;
     @NotEmpty
     @Max(value = 100)
+    @Column(name = "name")
     private String name;
     @NotEmpty
     @Max(value = 100)
+    @Column(name = "author")
     private String author;
     @NotEmpty
     @Min(value = 0,message = "Число слишком маленькое")
     @Max(value = 2014,message = "Число слишком большое")
+    @Column(name = "ear")
     private int ear;
 
     public int getPersonId() {
